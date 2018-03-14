@@ -539,21 +539,21 @@ def get_args():
                          help=('Show debug messages from RocketMap ' +
                                'and pgoapi.'),
                          type=int, dest='verbose')
-    parser.add_argument('-uas', '--user-auth-service', default=None,
+    parser.add_argument('--uas', '--user-auth-service', default=None,
                         help='Force end users to auth to an external service.')
-    parser.add_argument('-uascid', '--uas-client-id', default=None,
+    parser.add_argument('--uascid', '--uas-client-id', default=None,
                         help='Client ID for user external authentication.')
-    parser.add_argument('-uascs', '--uas-client-secret', default=None,
+    parser.add_argument('--uascs', '--uas-client-secret', default=None,
                         help='Client Secret for user external authentication.')
-    parser.add_argument('-uasho', '--uas-host-override', default=None,
+    parser.add_argument('--uasho', '--uas-host-override', default=None,
                         help='Host override for user external authentication.')
-    parser.add_argument('-uasdrg', '--uas-discord-required-guilds', default=None,
+    parser.add_argument('--uasdrg', '--uas-discord-required-guilds', default=None,
                         help='Required Discord Guild(s) for user external authentication.')
-    parser.add_argument('-uasdgi', '--uas-discord-guild-invite', default=None,
+    parser.add_argument('--uasdgi', '--uas-discord-guild-invite', default=None,
                         help='Link for users not in required guild.')
-    parser.add_argument('-uasdrr', '--uas-discord-required-roles', default=None,
+    parser.add_argument('--uasdrr', '--uas-discord-required-roles', default=None,
                         help='Required Discord Guild Role(s) for user external authentication.')
-    parser.add_argument('-uasdbt', '--uas-discord-bot-token', default=None,
+    parser.add_argument('--uasdbt', '--uas-discord-bot-token', default=None,
                         help='Discord Bot Token for user external authentication.')
     rarity = parser.add_argument_group('Dynamic Rarity')
     rarity.add_argument('-Rh', '--rarity-hours',
